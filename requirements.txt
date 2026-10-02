@@ -1,0 +1,15 @@
+# 花卉小能手 · 依赖清单
+# 安装：pip install -r requirements.txt
+#
+# 版本为项目验证通过的版本（Windows / Python 3.12 / CUDA 13.0 环境）。
+# torch 与 torchvision 的版本需彼此匹配，并按自己的 CUDA 版本选择安装源：
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+# 若只用 CPU，可去掉 --index-url，直接 pip install torch torchvision。
+
+torch==2.14.0
+torchvision==0.29.1
+numpy
+matplotlib
+Pillow
+scikit-learn
+markdown

@@ -1,0 +1,24 @@
+# ===== 运行后生成的数据（体积大，不入库）=====
+data/processed/
+data/quarantine/
+data/report/
+checkpoints/
+*.pth
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# ===== 虚拟环境（本项目复用机器上已有的 venv，不入库）=====
+.venv/
+venv/
+env/
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
