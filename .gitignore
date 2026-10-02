@@ -1,9 +1,15 @@
 # ===== 运行后生成的数据（体积大，不入库）=====
+# processed/ 168 MB、quarantine 与 checkpoints 也大 —— 且都可由管道重建
 data/processed/
 data/quarantine/
-data/report/
 checkpoints/
 *.pth
+
+# 坏图清单是任务一 1-1 的「结果证据」，只有 13 行，特意保留入库。
+# 注意：必须先排除目录内容（data/report/*）再反向包含该文件 ——
+# 直接写 data/report/ 会把整个目录排除掉，! 反向包含就失效了。
+data/report/*
+!data/report/bad_files.csv
 
 # ===== Python 缓存 =====
 __pycache__/
