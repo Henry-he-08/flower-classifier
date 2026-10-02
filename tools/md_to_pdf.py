@@ -22,7 +22,8 @@ import tempfile
 from pathlib import Path
 
 # 要转换的文档（相对 docs/ 目录）
-MD_FILES = ["提交报告.md", "训练过程记录.md", "学习过程记录.md", "概念题.md"]
+# 学习笔记.md 已加入：你补完笔记后跑一次脚本，会自动出 学习笔记.pdf
+MD_FILES = ["提交报告.md", "训练过程记录.md", "学习过程记录.md", "概念题.md", "学习笔记.md"]
 
 DOCS_DIR = Path(__file__).resolve().parents[1] / "docs"
 
